@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MegTek Voice Recorder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="recorder">
+  <h1>🎙 MegTek Voice Recorder</h1>
+
+  <canvas id="waveform"></canvas>
+  <div class="timer" id="timer">00:00</div>
+
+  <div class="buttons">
+    <button id="start">Start</button>
+    <button id="pause" disabled>Pause</button>
+    <button id="stop" disabled>Stop</button>
+  </div>
+
+  <div class="buttons">
+    <button id="downloadWebm" disabled>WEBM</button>
+    <button id="downloadMp3" disabled>MP3</button>
+  </div>
+
+  <audio id="audio" controls></audio>
+
+  <h3>📝 Speech to Text</h3>
+  <textarea id="transcript" placeholder="Your speech will appear here..."></textarea>
+
+  <h3>📁 Recordings</h3>
+  <ul id="recordings"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
